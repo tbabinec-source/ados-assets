@@ -20,24 +20,137 @@
     href="ADOS_Apple_Touch_Icon_180%20(1).png"
   >
 
-  <link rel="manifest" href="manifest.json">
+  <link
+    rel="manifest"
+    href="manifest.json"
+  >
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html,
     body {
       margin: 0;
+      padding: 0;
       width: 100%;
-      height: 100%;
-      background: #000;
+      min-height: 100%;
+      background: #000000;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #ffffff;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding:
+        max(24px, env(safe-area-inset-top))
+        24px
+        max(24px, env(safe-area-inset-bottom));
+    }
+
+    .launcher {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 170px;
+      height: 170px;
+      border-radius: 34px;
+      display: block;
+      margin: 0 auto 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 54px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    .divider {
+      width: 86px;
+      height: 6px;
+      background: #d71920;
+      border-radius: 999px;
+      margin: 22px auto;
+    }
+
+    .subtitle {
+      margin: 0 0 42px;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #cfcfcf;
+    }
+
+    .open-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 74px;
+      padding: 18px 24px;
+      border: 0;
+      border-radius: 18px;
+      background: #d71920;
+      color: #ffffff;
+      font-size: 23px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .open-button:active {
+      transform: scale(0.98);
+    }
+
+    .hint {
+      margin-top: 22px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #9a9a9a;
     }
   </style>
-
-  <script>
-    window.location.replace(
-      "https://script.google.com/a/macros/stjacobi.org/s/AKfycbyr_VC36T3BxN9P4_GMN5VpTdhkBHa8hqpX-Pxj0ub-fkyivkTq2NoEMC57yeWI7s-6ZA/exec?view=mobile&pli=1&authuser=1"
-    );
-  </script>
 </head>
 
-<body></body>
+<body>
+
+  <main class="launcher">
+
+    <img
+      class="logo"
+      src="ADOS_Apple_Touch_Icon_180%20(1).png"
+      alt="St. Jacobi Athletics"
+    >
+
+    <h1>ADOS</h1>
+
+    <div class="divider"></div>
+
+    <p class="subtitle">
+      ST. JACOBI ATHLETICS
+    </p>
+
+    <a
+      class="open-button"
+      href="https://script.google.com/a/macros/stjacobi.org/s/AKfycbyr_VC36T3BxN9P4_GMN5VpTdhkBHa8hqpX-Pxj0ub-fkyivkTq2NoEMC57yeWI7s-6ZA/exec?view=mobile&amp;pli=1&amp;authuser=1"
+    >
+      Open ADOS
+    </a>
+
+    <div class="hint">
+      Tap Open ADOS to launch the Athletic Department OS.
+    </div>
+
+  </main>
+
+</body>
 </html>
