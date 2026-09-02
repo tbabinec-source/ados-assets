@@ -1,6 +1,9 @@
 {
   "name": "ADOS",
   "short_name": "ADOS",
+  "description": "St. Jacobi Athletic Department OS",
+  "start_url": "/ados-assets/",
+  "scope": "/ados-assets/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
